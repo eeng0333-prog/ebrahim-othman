@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <!-- تعيين ترميز الأحرف إلى UTF-8 لدعم النصوص العربية -->
+    <meta charset="UTF-8">
+    <!-- جعل الموقع متجاوب مع جميع الأجهزة -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- عنوان صفحة التواصل -->
+    <title>تواصل معنا - إبراهيم المخلافي</title>
+    <!-- رابط Bootstrap CSS للتصميم المتجاوب -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- رابط Font Awesome للأيقونات -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- رابط ملف CSS المخصص -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- رأس الصفحة الرئيسي -->
+    <header class="bg-primary text-white">
+        <!-- شريط التنقل العلوي -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <!-- شعار الموقع -->
+                <a class="navbar-brand fw-bold fs-3" href="index.html">
+                    <i class="fas fa-truck me-2"></i>إبراهيم المخلافي
+                </a>
+                <!-- زر القائمة للشاشات الصغيرة -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- قائمة التنقل الرئيسية -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <!-- رابط الصفحة الرئيسية -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">الرئيسية</a>
+                        </li>
+                        <!-- رابط صفحة من نحن -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">من نحن</a>
+                        </li>
+                        <!-- رابط صفحة المنتجات -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">المنتجات</a>
+                        </li>
+                        <!-- رابط صفحة الحساب -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="account.html">الحساب</a>
+                        </li>
+                        <!-- رابط صفحة التواصل -->
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contact.html">تواصل معنا</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- المحتوى الرئيسي للصفحة -->
+    <main class="py-5">
+        <div class="container">
+            <!-- عنوان الصفحة -->
+            <div class="text-center mb-5">
+                <h1 class="display-4 fw-bold text-primary">تواصل معنا</h1>
+                <p class="lead text-muted">نحن هنا لخدمتك، تواصل معنا في أي وقت</p>
+            </div>
+
+            <!-- قسم معلومات التواصل -->
+            <section class="contact-info-section mb-5">
+                <div class="row g-4">
+                    <!-- معلومات الهاتف -->
+                    <div class="col-md-4">
+                        <div class="contact-info-card text-center h-100">
+                            <div class="contact-icon mb-3">
+                                <i class="fas fa-phone-alt fa-3x text-primary"></i>
+                            </div>
+                            <h3 class="h5 fw-bold">اتصل بنا</h3>
+                            <p class="text-muted mb-3">متاحون على مدار الساعة</p>
+                            <div class="contact-details">
+                                <p class="mb-1"><strong>الخط الساخن:</strong></p>
+                                <p class="text-primary fw-bold fs-5">10115633</p>
+                                <p class="mb-1"><strong>الجوال:</strong></p>
+                                <p class="text-primary fw-bold">772102394</p>
+                            </div>
+                            <button class="btn btn-outline-primary mt-3" onclick="loadModal('modal1.html')">
+                                <i class="fas fa-phone me-2"></i>طلب اتصال
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- معلومات الموقع -->
+                    <div class="col-md-4">
+                        <div class="contact-info-card text-center h-100">
+                            <div class="contact-icon mb-3">
+                                <i class="fas fa-map-marker-alt fa-3x text-success"></i>
+                            </div>
+                            <h3 class="h5 fw-bold">موقعنا</h3>
+                            <p class="text-muted mb-3">زورنا في مقرنا الرئيسي</p>
+                            <div class="contact-details">
+                                <p class="mb-2">
+                                    <i class="fas fa-building me-2 text-success"></i>
+                            شارع حده، صنعاء
+                                </p>
+                                <p class="mb-2">
+                                    <i class="fas fa-city me-2 text-success"></i>
+                                اليمن
+                                </p>
+                                <p class="mb-2">
+                                    <i class="fas fa-mail-bulk me-2 text-success"></i>
+                                    ص.ب: 12345
+                                </p>
+                            </div>
+                            <button class="btn btn-outline-success mt-3" onclick="loadModal('modal2.html')">
+                                <i class="fas fa-map me-2"></i>عرض الخريطة
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- معلومات البريد الإلكتروني -->
+                    <div class="col-md-4">
+                        <div class="contact-info-card text-center h-100">
+                            <div class="contact-icon mb-3">
+                                <i class="fas fa-envelope fa-3x text-warning"></i>
+                            </div>
+                            <h3 class="h5 fw-bold">راسلنا</h3>
+                            <p class="text-muted mb-3">نرد على رسائلك خلال 24 ساعة</p>
+                            <div class="contact-details">
+                                <p class="mb-2">
+                                    <i class="fas fa-at me-2 text-warning"></i>
+                                    info@ibrahim-delivery.com
+                                </p>
+                                <p class="mb-2">
+                                    <i class="fas fa-headset me-2 text-warning"></i>
+                                    support@ibrahim-delivery.com
+                                </p>
+                                <p class="mb-2">
+                                    <i class="fas fa-briefcase me-2 text-warning"></i>
+                                    business@ibrahim-delivery.com
+                                </p>
+                            </div>
+                            <a href="aaggmm570@gmai.com" class="btn btn-outline-warning mt-3">
+                                <i class="fas fa-paper-plane me-2"></i>إرسال إيميل
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- قسم نموذج التواصل -->
+            <section class="contact-form-section">
+                <div class="row">
+                    <!-- نموذج التواصل -->
+                    <div class="col-lg-8">
+                        <div class="contact-form-card">
+                            <div class="form-header text-center mb-4">
+                                <h2 class="h3 fw-bold text-primary">
+                                    <i class="fas fa-comments me-2"></i>أرسل لنا رسالة
+                                </h2>
+                                <p class="text-muted">املأ النموذج وسنتواصل معك في أقرب وقت</p>
+                            </div>
+
+                            <!-- نموذج التواصل -->
+                            <form id="contactForm" novalidate>
+                                <!-- الصف الأول: الاسم والبريد الإلكتروني -->
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group mb-3">
+                                            <label for="contactName" class="form-label">
+                                                <i class="fas fa-user me-2"></i>الاسم الكامل
+                                            </label>
+                                            <input type="text" class="form-control" id="contactName" name="name" 
+                                                   placeholder="أدخل اسمك الكامل" required>
+                                            <div class="invalid-feedback"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group mb-3">
+                                            <label for="contactEmail" class="form-label">
+                                                <i class="fas fa-envelope me-2"></i>البريد الإلكتروني
+                                            </label>
+                                            <input type="email" class="form-control" id="contactEmail" name="email" 
+                                                   placeholder="أدخل بريدك الإلكتروني" required>
+                                            <div class="invalid-feedback"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- الصف الثاني: الهاتف ونوع الاستفسار -->
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group mb-3">
+                                            <label for="contactPhone" class="form-label">
+                                                <i class="+967772102394"></i>رقم الهاتف
+                                            </label>
+                                            <input type="tel" class="form-control" id="contactPhone" name="phone" 
+                                                   placeholder="+967772102394" required>
+                                            <div class="invalid-feedback"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group mb-3">
+                                            <label for="inquiryType" class="form-label">
+                                                <i class="fas fa-question-circle me-2"></i>نوع الاستفسار
+                                            </label>
+                                            <select class="form-control" id="inquiryType" name="inquiryType" required>
+                                                <option value="">اختر نوع الاستفسار</option>
+                                                <option value="order">استفسار عن طلب</option>
+                                                <option value="complaint">شكوى</option>
+                                                <option value="suggestion">اقتراح</option>
+                                                <option value="partnership">شراكة</option>
+                                                <option value="other">أخرى</option>
+                                            </select>
+                                            <div class="invalid-feedback"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- حقل الموضوع -->
+                                <div class="form-group mb-3">
+                                    <label for="contactSubject" class="form-label">
+                                        <i class="fas fa-tag me-2"></i>موضوع الرسالة
+                                    </label>
+                                    <input type="text" class="form-control" id="contactSubject" name="subject" 
+                                           placeholder="أدخل موضوع رسالتك" required>
+                                    <div class="invalid-feedback"></div>
+                                </div>
+
+                                <!-- حقل الرسالة -->
+                                <div class="form-group mb-4">
+                                    <label for="contactMessage" class="form-label">
+                                        <i class="fas fa-comment-alt me-2"></i>الرسالة
+                                    </label>
+                                    <textarea class="form-control" id="contactMessage" name="message" rows="5" 
+                                              placeholder="اكتب رسالتك هنا..." required></textarea>
+                                    <div class="invalid-feedback"></div>
+                                    <small class="form-text text-muted">
+                                        <span id="messageCounter">0</span>/500 حرف
+                                    </small>
+                                </div>
+
+                                <!-- زر الإرسال -->
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg px-5">
+                                        <i class="fas fa-paper-plane me-2"></i>إرسال الرسالة
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- معلومات إضافية -->
+                    <div class="col-lg-4">
+                        <!-- ساعات العمل -->
+                        <div class="info-card mb-4">
+                            <h3 class="h5 fw-bold text-primary mb-3">
+                                <i class="fas fa-clock me-2"></i>ساعات العمل
+                            </h3>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <i class="fas fa-calendar-day me-2 text-success"></i>
+                                    <strong>السبت - الخميس:</strong> 8:00 ص - 12:00 م
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fas fa-calendar-day me-2 text-warning"></i>
+                                    <strong>الجمعة:</strong> 2:00 م - 12:00 م
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fas fa-phone-volume me-2 text-primary"></i>
+                                    <strong>خدمة العملاء:</strong> 24/7
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- وسائل التواصل الاجتماعي -->
+                        <div class="info-card mb-4">
+                            <h3 class="h5 fw-bold text-primary mb-3">
+                                <i class="fas fa-share-alt me-2"></i>تابعنا على
+                            </h3>
+                            <div class="social-media-links">
+                                <a href="#" class="social-link facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                    <span>Facebook</span>
+                                </a>
+                                <a href="#" class="social-link twitter">
+                                    <i class="fab fa-twitter"></i>
+                                    <span>Twitter</span>
+                                </a>
+                                <a href="#" class="social-link instagram">
+                                    <i class="fab fa-instagram"></i>
+                                    <span>Instagram</span>
+                                </a>
+                                <a href="#" class="social-link whatsapp">
+                                    <i class="fab fa-whatsapp"></i>
+                                    <span>WhatsApp</span>
+                                </a>
+                                <a href="#" class="social-link linkedin">
+                                    <i class="fab fa-linkedin-in"></i>
+                                    <span>LinkedIn</span>
+                                </a>
+                                <a href="#" class="social-link youtube">
+                                    <i class="fab fa-youtube"></i>
+                                    <span>YouTube</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- نصائح سريعة -->
+                        <div class="info-card">
+                            <h3 class="h5 fw-bold text-primary mb-3">
+                                <i class="fas fa-lightbulb me-2"></i>نصائح سريعة
+                            </h3>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <i class="fas fa-check-circle me-2 text-success"></i>
+                                    اذكر رقم طلبك عند الاستفسار
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fas fa-check-circle me-2 text-success"></i>
+                                    كن واضحاً في وصف المشكلة
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fas fa-check-circle me-2 text-success"></i>
+                                    أرفق صور إذا لزم الأمر
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fas fa-check-circle me-2 text-success"></i>
+                                    تحقق من بريدك الإلكتروني للرد
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- قسم الأسئلة الشائعة -->
+            <section class="faq-section mt-5">
+                <div class="text-center mb-4">
+                    <h2 class="h3 fw-bold text-primary">الأسئلة الشائعة</h2>
+                    <p class="text-muted">إجابات على أكثر الأسئلة شيوعاً</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="accordion" id="faqAccordion">
+                            <!-- السؤال الأول -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="faq1">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" 
+                                            data-bs-target="#collapse1">
+                                        <i class="fas fa-shipping-fast me-2 text-primary"></i>
+                                        كم يستغرق التوصيل؟
+                                    </button>
+                                </h2>
+                                <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        نحن نلتزم بالتوصيل خلال 30-45 دقيقة داخل المدينة، وقد يستغرق التوصيل 
+                                        وقتاً أطول في المناطق البعيدة أو أوقات الذروة.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- السؤال الثاني -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="faq2">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                                            data-bs-target="#collapse2">
+                                        <i class="fas fa-credit-card me-2 text-success"></i>
+                                        ما هي طرق الدفع المتاحة؟
+                                    </button>
+                                </h2>
+                                <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        نقبل الدفع نقداً عند التسليم، أو عبر البطاقات الائتمانية، أو التحويل البنكي، 
+                                        أو المحافظ الإلكترونية مثل STC Pay و Apple Pay.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- السؤال الثالث -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="faq3">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                                            data-bs-target="#collapse3">
+                                        <i class="fas fa-map-marked-alt me-2 text-warning"></i>
+                                        ما هي المناطق التي تغطونها؟
+                                    </button>
+                                </h2>
+                                <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        نغطي جميع أحياء الرياض والمناطق المجاورة. يمكنك التحقق من تغطية منطقتك 
+                                        عند إدخال عنوانك في التطبيق.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- السؤال الرابع -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="faq4">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                                            data-bs-target="#collapse4">
+                                        <i class="fas fa-undo-alt me-2 text-danger"></i>
+                                        هل يمكنني إلغاء أو تعديل طلبي؟
+                                    </button>
+                                </h2>
+                                <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        يمكنك إلغاء أو تعديل طلبك خلال 5 دقائق من تأكيد الطلب. بعد ذلك، 
+                                        يرجى التواصل مع خدمة العملاء لمساعدتك.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- تذييل الصفحة -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <!-- معلومات الشركة -->
+                <div class="col-md-6">
+                    <h5 class="fw-bold mb-3">إبراهيم المخلافي</h5>
+                    <p class="text-muted">خدمة التوصيل الأسرع والأفضل في المدينة</p>
+                </div>
+                <!-- روابط التواصل الاجتماعي -->
+                <div class="col-md-6 text-md-end">
+                    <h5 class="fw-bold mb-3">تابعنا</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-whatsapp fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- حقوق النشر -->
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2024 إبراهيم المخلافي. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Container -->
+    <div id="modalContainer"></div>
+
+    <!-- رابط Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- رابط ملف JavaScript المخصص -->
+    <script src="../js/main.js"></script>
+    <!-- رابط ملف JavaScript للتواصل -->
+    <script src="../js/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <!-- تعيين ترميز الأحرف إلى UTF-8 لدعم النصوص العربية -->
+    <meta charset="UTF-8">
+    <!-- جعل الموقع متجاوب مع جميع الأجهزة -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- عنوان صفحة المنتجات -->
+    <title>المنتجات - إبراهيم المخلافي</title>
+    <!-- رابط Bootstrap CSS للتصميم المتجاوب -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- رابط Font Awesome للأيقونات -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- رابط ملف CSS المخصص -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- رأس الصفحة الرئيسي -->
+    <header class="bg-primary text-white">
+        <!-- شريط التنقل العلوي -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <!-- شعار الموقع -->
+                <a class="navbar-brand fw-bold fs-3" href="index.html">
+                    <i class="fas fa-truck me-2"></i>إبراهيم المخلافي
+                </a>
+                <!-- زر القائمة للشاشات الصغيرة -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- قائمة التنقل الرئيسية -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <!-- رابط الصفحة الرئيسية -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">الرئيسية</a>
+                        </li>
+                        <!-- رابط صفحة من نحن -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">من نحن</a>
+                        </li>
+                        <!-- رابط صفحة المنتجات -->
+                        <li class="nav-item">
+                            <a class="nav-link active" href="menu.html">المنتجات</a>
+                        </li>
+                        <!-- رابط صفحة الحساب -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="account.html">الحساب</a>
+                        </li>
+                        <!-- رابط صفحة التواصل -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">تواصل معنا</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- المحتوى الرئيسي للصفحة -->
+    <main class="py-5">
+        <div class="container">
+            <!-- عنوان الصفحة -->
+            <div class="text-center mb-5">
+                <h1 class="display-4 fw-bold text-primary">منتجاتنا</h1>
+                <p class="lead text-muted">اختر من مجموعة واسعة من المنتجات عالية الجودة</p>
+            </div>
+
+            <!-- شريط البحث والفلترة -->
+            <section class="filter-section mb-5">
+                <div class="row align-items-center">
+                    <!-- مربع البحث -->
+                    <div class="col-md-6 mb-3">
+                        <div class="search-box">
+                            <input type="text" class="form-control" id="searchInput" placeholder="ابحث عن منتج...">
+                            <i class="fas fa-search search-icon"></i>
+                        </div>
+                    </div>
+                    <!-- أزرار الفلترة -->
+                    <div class="col-md-6 mb-3">
+                        <div class="filter-buttons text-md-end">
+                            <button class="btn btn-outline-primary active me-2" data-filter="all">الكل</button>
+                            <button class="btn btn-outline-primary me-2" data-filter="food">طعام</button>
+                            <button class="btn btn-outline-primary me-2" data-filter="grocery">بقالة</button>
+                            <button class="btn btn-outline-primary" data-filter="items">منتجات أخرى</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- قسم الطعام -->
+            <section class="category-section mb-5" id="food-section">
+                <div class="category-header mb-4">
+                    <h2 class="h3 fw-bold text-primary">
+                        <i class="fas fa-utensils me-2"></i>الطعام والوجبات
+                    </h2>
+                    <p class="text-muted">أشهى الوجبات من أفضل المطاعم</p>
+                </div>
+                <!-- شبكة المنتجات باستخدام CSS Grid -->
+                <div class="products-grid">
+                    <!-- منتج الطعام الأول -->
+                    <div class="product-card" data-category="food">
+                        <div class="product-image">
+                            <img src="../images/slide3.jpg" alt="برجر لحم" class="img-fluid">
+                            <div class="product-overlay">
+                                <button class="btn btn-primary add-to-cart" data-product="برجر لحم" data-price="25">
+                                    <i class="fas fa-plus me-1"></i>إضافة للطلب
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">برجر لحم مشوي</h3>
+                            <p class="product-description">برجر لحم طازج مع الخضار والصوص الخاص</p>
+                            <div class="product-price">
+                                <span class="price">25 ريال</span>
+                                <div class="rating">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <span class="rating-text">(4.8)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- منتج الطعام الثاني -->
+                    <div class="product-card" data-category="food">
+                        <div class="product-image">
+                            <img src="../images/slide1.jpg" alt="بيتزا مارجريتا" class="img-fluid">
+                            <div class="product-overlay">
+                                <button class="btn btn-primary add-to-cart" data-product="بيتزا مارجريتا" data-price="35">
+                                    <i class="fas fa-plus me-1"></i>إضافة للطلب
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">بيتزا مارجريتا</h3>
+                            <p class="product-description">بيتزا كلاسيكية بالجبن والطماطم والريحان</p>
+                            <div class="product-price">
+                                <span class="price">35 ريال</span>
+                                <div class="rating">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="far fa-star text-warning"></i>
+                                    <span class="rating-text">(4.5)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- منتج الطعام الثالث -->
+                    <div class="product-card" data-category="food">
+                        <div class="product-image">
+                            <img src="../images/food3.jpg" alt="شاورما دجاج" class="img-fluid">
+                            <div class="product-overlay">
+                                <button class="btn btn-primary add-to-cart" data-product="شاورما دجاج" data-price="18">
+                                    <i class="fas fa-plus me-1"></i>إضافة للطلب
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">شاورما دجاج</h3>
+                            <p class="product-description">شاورما دجاج طازجة مع الخضار والثوم</p>
+                            <div class="product-price">
+                                <span class="price">18 ريال</span>
+                                <div class="rating">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <span class="rating-text">(4.9)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- منتج الطعام الرابع -->
+                    <div class="product-card" data-category="food">
+                        <div class="product-image">
+                            <img src="../images/food4.jpg" alt="سلطة قيصر" class="img-fluid">
+                            <div class="product-overlay">
+                                <button class="btn btn-primary add-to-cart" data-product="سلطة قيصر" data-price="22">
+                                    <i class="fas fa-plus me-1"></i>إضافة للطلب
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">سلطة قيصر</h3>
+                            <p class="product-description">سلطة قيصر كلاسيكية مع الدجاج المشوي</p>
+                            <div class="product-price">
+                                <span class="price">22 ريال</span>
+                                <div class="rating">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="far fa-star text-warning"></i>
+                                    <span class="rating-text">(4.3)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- قسم البقالة -->
+            <section class="category-section mb-5" id="grocery-section">
+                <div class="category-header mb-4">
+                    <h2 class="h3 fw-bold text-primary">
+                        <i class="fas fa-shopping-cart me-2"></i>البقالة والمواد الغذائية
+                    </h2>
+                    <p class="text-muted">جميع احتياجاتك اليومية من البقالة</p>
+                </div>
+                <!-- شبكة المنتجات باستخدام CSS Grid -->
+                <div class="products-grid">
+                    <!-- منتج البقالة الأول -->
+                    <div class="product-card" data-category="grocery">
+                        <div class="product-image">
+                            <img src="../images/grocery1.jpg" alt="أرز بسمتي" class="img-fluid">
+                            <div class="product-overlay">
+                                <button class="btn btn-primary add-to-cart" data-product="أرز بسمتي" data-price="15">
+                                    <i class="fas fa-plus me-1"></i>إضافة للطلب
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">أرز بسمتي</h3>
+                            <p class="product-description">أرز بسمتي عالي الجودة - كيس 5 كيلو</p>
+                            <div class="product-price">
+                                <span class="price">15 ريال</span>
+                                <div class="rating">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <span class="rating-text">(4.7)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- منتج البقالة الثاني -->
+                    <div class="product-card" data-category="grocery">
+                        <div class="product-image">
+                            <img src="../images/grocery2.jpg" alt="زيت زيتون" class="img-fluid">
+                            <div class="product-overlay">
+                                <button class="btn btn-primary add-to-cart" data-product="زيت زيتون" data-price="28">
+                                    <i class="fas fa-plus me-1"></i>إضافة للطلب
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">زيت زيتون بكر</h3>
+                            <p class="product-description">زيت زيتون بكر ممتاز - عبوة 500 مل</p>
+                            <div class="product-price">
+                                <span class="price">28 ريال</span>
+                                <div class="rating">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="far fa-star text-warning"></i>
+                                    <span class="rating-text">(4.4)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- منتج البقالة الثالث -->
+                    <div class="product-card" data-category="grocery">
+                        <div class="product-image">
+                            <img src="../images/grocery3.jpg" alt="حليب طازج" class="img-fluid">
+                            <div class="product-overlay">
+                                <button class="btn btn-primary add-to-cart" data-product="حليب طازج" data-price="8">
+                                    <i class="fas fa-plus me-1"></i>إضافة للطلب
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">حليب طازج</h3>
+                            <p class="product-description">حليب طازج كامل الدسم - عبوة 1 لتر</p>
+                            <div class="product-price">
+                                <span class="price">8 ريال</span>
+                                <div class="rating">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <span class="rating-text">(4.8)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- منتج البقالة الرابع -->
+                    <div class="product-card" data-category="grocery">
+                        <div class="product-image">
+                            <img src="../images/grocery4.jpg" alt="خبز طازج" class="img-fluid">
+                            <div class="product-overlay">
+                                <button class="btn btn-primary add-to-cart" data-product="خبز طازج" data-price="3">
+                                    <i class="fas fa-plus me-1"></i>إضافة للطلب
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">خبز طازج</h3>
+                            <p class="product-description">خبز طازج يومياً من الفرن</p>
+                            <div class="product-price">
+                                <span class="price">3 ريال</span>
+                                <div class="rating">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <span class="rating-text">(4.9)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- قسم المنتجات الأخرى -->
+            <section class="category-section mb-5" id="items-section">
+                <div class="category-header mb-4">
+                    <h2 class="h3 fw-bold text-primary">
+                        <i class="fas fa-box me-2"></i>منتجات أخرى
+                    </h2>
+                    <p class="text-muted">منتجات متنوعة لجميع احتياجاتك</p>
+                </div>
+                <!-- شبكة المنتجات باستخدام CSS Grid -->
+                <div class="products-grid">
+                    <!-- منتج آخر الأول -->
+                    <div class="product-card" data-category="items">
+                        <div class="product-image">
+                            <img src="../images/item1.jpg" alt="منظف متعدد الاستخدامات" class="img-fluid">
+                            <div class="product-overlay">
+                                <button class="btn btn-primary add-to-cart" data-product="منظف متعدد الاستخدامات" data-price="12">
+                                    <i class="fas fa-plus me-1"></i>إضافة للطلب
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">منظف متعدد الاستخدامات</h3>
+                            <p class="product-description">منظف قوي وآمن لجميع الأسطح</p>
+                            <div class="product-price">
+                                <span class="price">12 ريال</span>
+                                <div class="rating">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="far fa-star text-warning"></i>
+                                    <span class="rating-text">(4.2)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- منتج آخر الثاني -->
+                    <div class="product-card" data-category="items">
+                        <div class="product-image">
+                            <img src="../images/item2.jpg" alt="شامبو للشعر" class="img-fluid">
+                            <div class="product-overlay">
+                                <button class="btn btn-primary add-to-cart" data-product="شامبو للشعر" data-price="18">
+                                    <i class="fas fa-plus me-1"></i>إضافة للطلب
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">شامبو للشعر</h3>
+                            <p class="product-description">شامبو طبيعي لجميع أنواع الشعر</p>
+                            <div class="product-price">
+                                <span class="price">18 ريال</span>
+                                <div class="rating">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <span class="rating-text">(4.6)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- منتج آخر الثالث -->
+                    <div class="product-card" data-category="items">
+                        <div class="product-image">
+                            <img src="../images/item3.jpg" alt="بطاريات" class="img-fluid">
+                            <div class="product-overlay">
+                                <button class="btn btn-primary add-to-cart" data-product="بطاريات" data-price="10">
+                                    <i class="fas fa-plus me-1"></i>إضافة للطلب
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">بطاريات AA</h3>
+                            <p class="product-description">بطاريات عالية الجودة - عبوة 4 قطع</p>
+                            <div class="product-price">
+                                <span class="price">10 ريال</span>
+                                <div class="rating">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="far fa-star text-warning"></i>
+                                    <span class="rating-text">(4.1)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- منتج آخر الرابع -->
+                    <div class="product-card" data-category="items">
+                        <div class="product-image">
+                            <img src="../images/item4.jpg" alt="مناديل ورقية" class="img-fluid">
+                            <div class="product-overlay">
+                                <button class="btn btn-primary add-to-cart" data-product="مناديل ورقية" data-price="6">
+                                    <i class="fas fa-plus me-1"></i>إضافة للطلب
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">مناديل ورقية</h3>
+                            <p class="product-description">مناديل ورقية ناعمة - عبوة كبيرة</p>
+                            <div class="product-price">
+                                <span class="price">6 ريال</span>
+                                <div class="rating">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <span class="rating-text">(4.5)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- قسم عرض سلة التسوق -->
+            <aside class="cart-summary bg-light p-4 rounded shadow-sm">
+                <h3 class="h5 fw-bold mb-3">
+                    <i class="fas fa-shopping-cart me-2"></i>سلة التسوق
+                </h3>
+                <div id="cartItems" class="cart-items mb-3">
+                    <p class="text-muted">لا توجد منتجات في السلة</p>
+                </div>
+                <div class="cart-total">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <span>المجموع:</span>
+                        <span class="fw-bold" id="cartTotal">0 ريال</span>
+                    </div>
+                    <button class="btn btn-success w-100" id="checkoutBtn" disabled>
+                        <i class="fas fa-credit-card me-1"></i>إتمام الطلب
+                    </button>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- تذييل الصفحة -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <!-- معلومات الشركة -->
+                <div class="col-md-6">
+                    <h5 class="fw-bold mb-3">إبراهيم المخلافي</h5>
+                    <p class="text-muted">خدمة التوصيل الأسرع والأفضل في المدينة</p>
+                </div>
+                <!-- روابط التواصل الاجتماعي -->
+                <div class="col-md-6 text-md-end">
+                    <h5 class="fw-bold mb-3">تابعنا</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-whatsapp fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- حقوق النشر -->
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2024 إبراهيم المخلافي. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- رابط Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- رابط ملف JavaScript المخصص -->
+    <script src="../js/main.js"></script>
+    <!-- رابط ملف JavaScript للمنتجات -->
+    <script src="../js/menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <!-- تعيين ترميز الأحرف إلى UTF-8 لدعم النصوص العربية -->
+    <meta charset="UTF-8">
+    <!-- جعل الموقع متجاوب مع جميع الأجهزة -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- عنوان الصفحة الرئيسية -->
+    <title>إبراهيم المخلافي - خدمة التوصيل</title>
+    <!-- رابط Bootstrap CSS للتصميم المتجاوب -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- رابط Font Awesome للأيقونات -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- رابط ملف CSS المخصص -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- رأس الصفحة الرئيسي -->
+    <header class="bg-primary text-white">
+        <!-- شريط التنقل العلوي -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <!-- شعار الموقع -->
+                <a class="navbar-brand fw-bold fs-3" href="index.html">
+                    <i class="fas fa-truck me-2"></i>إبراهيم المخلافي
+                </a>
+                <!-- زر القائمة للشاشات الصغيرة -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- قائمة التنقل الرئيسية -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <!-- رابط الصفحة الرئيسية -->
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">الرئيسية</a>
+                        </li>
+                        <!-- رابط صفحة من نحن -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">من نحن</a>
+                        </li>
+                        <!-- رابط صفحة المنتجات -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">المنتجات</a>
+                        </li>
+                        <!-- رابط صفحة الحساب -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="account.html">الحساب</a>
+                        </li>
+                        <!-- رابط صفحة التواصل -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">تواصل معنا</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- المحتوى الرئيسي للصفحة -->
+    <main>
+        <!-- قسم العرض التقديمي مع Bootstrap Carousel -->
+        <section class="hero-section">
+            <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+                <!-- مؤشرات الشرائح -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+                </div>
+                <!-- محتوى الشرائح -->
+                <div class="carousel-inner">
+                    <!-- الشريحة الأولى -->
+                    <div class="carousel-item active">
+                        <img src="../images/slide1.jpg" class="d-block w-100 carousel-image" alt="خدمة التوصيل السريع">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2 class="display-4 fw-bold">خدمة التوصيل السريع</h2>
+                            <p class="lead">نوصل لك طلباتك في أسرع وقت ممكن</p>
+                        </div>
+                    </div>
+                    <!-- الشريحة الثانية -->
+                    <div class="carousel-item">
+                        <img src="../images/slide2.jpg" class="d-block w-100 carousel-image" alt="طعام طازج">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2 class="display-4 fw-bold">طعام طازج ولذيذ</h2>
+                            <p class="lead">أفضل المطاعم والوجبات الشهية</p>
+                        </div>
+                    </div>
+                    <!-- الشريحة الثالثة -->
+                    <div class="carousel-item">
+                        <img src="../images/slide3.jpg" class="d-block w-100 carousel-image" alt="توصيل مجاني">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2 class="display-4 fw-bold">توصيل مجاني</h2>
+                            <p class="lead">للطلبات أكثر من 50 ريال</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- أزرار التنقل بين الشرائح -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </section>
+
+        <!-- قسم الخدمات الرئيسية -->
+        <section class="services-section py-5">
+            <div class="container">
+                <!-- عنوان القسم -->
+                <div class="text-center mb-5">
+                    <h2 class="display-5 fw-bold text-primary">خدماتنا المميزة</h2>
+                    <p class="lead text-muted">نقدم لك أفضل خدمات التوصيل في المدينة</p>
+                </div>
+                <!-- شبكة الخدمات -->
+                <div class="row g-4">
+                    <!-- خدمة توصيل الطعام -->
+                    <div class="col-md-4">
+                        <div class="service-card text-center p-4 h-100">
+                            <div class="service-icon mb-3">
+                                <i class="fas fa-utensils fa-3x text-primary"></i>
+                            </div>
+                            <h3 class="h4 fw-bold">توصيل الطعام</h3>
+                            <p class="text-muted">أشهى الوجبات من أفضل المطاعم</p>
+                        </div>
+                    </div>
+                    <!-- خدمة توصيل البقالة -->
+                    <div class="col-md-4">
+                        <div class="service-card text-center p-4 h-100">
+                            <div class="service-icon mb-3">
+                                <i class="fas fa-shopping-cart fa-3x text-primary"></i>
+                            </div>
+                            <h3 class="h4 fw-bold">توصيل البقالة</h3>
+                            <p class="text-muted">جميع احتياجاتك اليومية</p>
+                        </div>
+                    </div>
+                    <!-- خدمة التوصيل السريع -->
+                    <div class="col-md-4">
+                        <div class="service-card text-center p-4 h-100">
+                            <div class="service-icon mb-3">
+                                <i class="fas fa-shipping-fast fa-3x text-primary"></i>
+                            </div>
+                            <h3 class="h4 fw-bold">التوصيل السريع</h3>
+                            <p class="text-muted">خلال 30 دقيقة أو أقل</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم إحصائيات الخدمة -->
+        <section class="stats-section bg-light py-5">
+            <div class="container">
+                <div class="row text-center">
+                    <!-- عدد العملاء -->
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="stat-item">
+                            <h3 class="display-4 fw-bold text-primary">1000+</h3>
+                            <p class="text-muted">عميل راضي</p>
+                        </div>
+                    </div>
+                    <!-- عدد الطلبات -->
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="stat-item">
+                            <h3 class="display-4 fw-bold text-primary">5000+</h3>
+                            <p class="text-muted">طلب مكتمل</p>
+                        </div>
+                    </div>
+                    <!-- عدد المطاعم -->
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="stat-item">
+                            <h3 class="display-4 fw-bold text-primary">50+</h3>
+                            <p class="text-muted">مطعم شريك</p>
+                        </div>
+                    </div>
+                    <!-- سنوات الخبرة -->
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="stat-item">
+                            <h3 class="display-4 fw-bold text-primary">5</h3>
+                            <p class="text-muted">سنوات خبرة</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- تذييل الصفحة -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <!-- معلومات الشركة -->
+                <div class="col-md-6">
+                    <h5 class="fw-bold mb-3">إبراهيم المخلافي</h5>
+                    <p class="text-muted">خدمة التوصيل الأسرع والأفضل في المدينة</p>
+                </div>
+                <!-- روابط التواصل الاجتماعي -->
+                <div class="col-md-6 text-md-end">
+                    <h5 class="fw-bold mb-3">تابعنا</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-whatsapp fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- حقوق النشر -->
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2024 إبراهيم المخلافي. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- رابط Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- رابط ملف JavaScript المخصص -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

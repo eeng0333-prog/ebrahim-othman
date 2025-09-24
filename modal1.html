@@ -1,0 +1,88 @@
+<!-- نافذة طلب الاتصال -->
+<div class="modal fade" id="callRequestModal" tabindex="-1" aria-labelledby="callRequestModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <!-- رأس النافذة -->
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title" id="callRequestModalLabel">
+                    <i class="fas fa-phone-alt me-2"></i>طلب اتصال
+                </h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            
+            <!-- محتوى النافذة -->
+            <div class="modal-body">
+                <div class="text-center mb-4">
+                    <div class="modal-icon mb-3">
+                        <i class="fas fa-phone-volume fa-4x text-primary"></i>
+                    </div>
+                    <h4 class="fw-bold">سنتصل بك قريباً</h4>
+                    <p class="text-muted">املأ البيانات التالية وسنتواصل معك خلال دقائق</p>
+                </div>
+
+                <!-- نموذج طلب الاتصال -->
+                <form id="callRequestForm">
+                    <!-- حقل الاسم -->
+                    <div class="form-group mb-3">
+                        <label for="callName" class="form-label">
+                            <i class="fas fa-user me-2"></i>الاسم
+                        </label>
+                        <input type="text" class="form-control" id="callName" name="name" 
+                               placeholder="أدخل اسمك" required>
+                        <div class="invalid-feedback"></div>
+                    </div>
+
+                    <!-- حقل رقم الهاتف -->
+                    <div class="form-group mb-3">
+                        <label for="callPhone" class="form-label">
+                            <i class="fas fa-phone me-2"></i>رقم الهاتف
+                        </label>
+                        <input type="tel" class="form-control" id="callPhone" name="phone" 
+                               placeholder="05xxxxxxxx" required>
+                        <div class="invalid-feedback"></div>
+                    </div>
+
+                    <!-- حقل الوقت المفضل -->
+                    <div class="form-group mb-3">
+                        <label for="preferredTime" class="form-label">
+                            <i class="fas fa-clock me-2"></i>الوقت المفضل للاتصال
+                        </label>
+                        <select class="form-control" id="preferredTime" name="preferredTime" required>
+                            <option value="">اختر الوقت المفضل</option>
+                            <option value="now">الآن</option>
+                            <option value="morning">صباحاً (8-12)</option>
+                            <option value="afternoon">بعد الظهر (12-6)</option>
+                            <option value="evening">مساءً (6-10)</option>
+                        </select>
+                        <div class="invalid-feedback"></div>
+                    </div>
+
+                    <!-- حقل سبب الاتصال -->
+                    <div class="form-group mb-4">
+                        <label for="callReason" class="form-label">
+                            <i class="fas fa-comment me-2"></i>سبب الاتصال (اختياري)
+                        </label>
+                        <textarea class="form-control" id="callReason" name="reason" rows="3" 
+                                  placeholder="اكتب سبب الاتصال..."></textarea>
+                    </div>
+
+                    <!-- معلومات إضافية -->
+                    <div class="alert alert-info">
+                        <i class="fas fa-info-circle me-2"></i>
+                        <strong>ملاحظة:</strong> سيتم الاتصال بك من الرقم 920001234
+                    </div>
+                </form>
+            </div>
+            
+            <!-- تذييل النافذة -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                    <i class="fas fa-times me-2"></i>إلغاء
+                </button>
+                <button type="button" class="btn btn-primary" onclick="submitCallRequest()">
+                    <i class="fas fa-phone me-2"></i>طلب الاتصال
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

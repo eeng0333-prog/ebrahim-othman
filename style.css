@@ -1,0 +1,198 @@
+/* تخصيص صفحة التواصل */
+
+/* تخصيص بطاقات معلومات التواصل */
+.contact-info-card {
+  /* خلفية بيضاء */
+  background: white;
+  /* حواف مدورة */
+  border-radius: 15px;
+  /* مسافة داخلية */
+  padding: 30px 20px;
+  /* ظل خفيف */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  /* تأثير انتقالي */
+  transition: all 0.3s ease;
+  /* حدود شفافة */
+  border: 2px solid transparent;
+}
+
+/* تأثير التمرير على بطاقات معلومات التواصل */
+.contact-info-card:hover {
+  /* رفع البطاقة */
+  transform: translateY(-5px);
+  /* تعزيز الظل */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  /* حدود ملونة */
+  border-color: #e9ecef;
+}
+
+/* تخصيص أيقونات التواصل */
+.contact-icon {
+  /* تأثير انتقالي */
+  transition: transform 0.3s ease;
+}
+
+/* تأثير التمرير على أيقونات التواصل */
+.contact-info-card:hover .contact-icon {
+  /* تكبير الأيقونة */
+  transform: scale(1.1);
+}
+
+/* تخصيص تفاصيل التواصل */
+.contact-details p {
+  /* مسافة سفلية */
+  margin-bottom: 8px;
+  /* لون النص */
+  color: #495057;
+}
+
+/* تخصيص بطاقة نموذج التواصل */
+.contact-form-card {
+  /* خلفية بيضاء */
+  background: white;
+  /* حواف مدورة */
+  border-radius: 20px;
+  /* مسافة داخلية */
+  padding: 40px;
+  /* ظل جميل */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  /* تأثير انتقالي */
+  transition: all 0.3s ease;
+}
+
+/* تأثير التمرير على بطاقة النموذج */
+.contact-form-card:hover {
+  /* تعزيز الظل */
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* تخصيص بطاقات المعلومات الإضافية */
+.info-card {
+  /* خلفية بيضاء */
+  background: white;
+  /* حواف مدورة */
+  border-radius: 15px;
+  /* مسافة داخلية */
+  padding: 25px;
+  /* ظل خفيف */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  /* تأثير انتقالي */
+  transition: all 0.3s ease;
+}
+
+/* تأثير التمرير على بطاقات المعلومات */
+.info-card:hover {
+  /* رفع البطاقة */
+  transform: translateY(-3px);
+  /* تعزيز الظل */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* تخصيص روابط وسائل التواصل الاجتماعي */
+.social-media-links {
+  /* عرض flex */
+  display: flex;
+  /* اتجاه عمودي */
+  flex-direction: column;
+  /* مسافة بين العناصر */
+  gap: 12px;
+}
+
+/* تخصيص رابط وسائل التواصل */
+.social-link {
+  /* عرض flex */
+  display: flex;
+  /* محاذاة وسط */
+  align-items: center;
+  /* مسافة داخلية */
+  padding: 12px 15px;
+  /* حواف مدورة */
+  border-radius: 10px;
+  /* بدون تسطير */
+  text-decoration: none;
+  /* لون النص */
+  color: #495057;
+  /* تأثير انتقالي */
+  transition: all 0.3s ease;
+  /* حدود شفافة */
+  border: 2px solid transparent;
+}
+
+/* تخصيص أيقونة وسائل التواصل */
+.social-link i {
+  /* عرض ثابت */
+  width: 20px;
+  /* توسيط النص */
+  text-align: center;
+  /* مسافة يمينية */
+  margin-right: 10px;
+  /* حجم خط */
+  font-size: 1.1rem;
+}
+
+/* تأثير التمرير على روابط وسائل التواصل */
+.social-link:hover {
+  /* رفع الرابط */
+  transform: translateX(5px);
+  /* حدود ملونة */
+  border-color: #e9ecef;
+}
+
+/* ألوان خاصة لكل منصة */
+.social-link.facebook:hover {
+  /* خلفية فيسبوك */
+  background: rgba(24, 119, 242, 0.1);
+  /* لون فيسبوك */
+  color: #1877f2;
+}
+
+.social-link.twitter:hover {
+  /* خلفية تويتر */
+  background: rgba(29, 161, 242, 0.1);
+  /* لون تويتر */
+  color: #1da1f2;
+}
+
+.social-link.instagram:hover {
+  /* خلفية إنستغرام */
+  background: rgba(225, 48, 108, 0.1);
+  /* لون إنستغرام */
+  color: #e1306c;
+}
+
+.social-link.whatsapp:hover {
+  /* خلفية واتساب */
+  background: rgba(37, 211, 102, 0.1);
+  /* لون واتساب */
+  color: #25d366;
+}
+
+.social-link.linkedin:hover {
+  /* خلفية لينكد إن */
+  background: rgba(0, 119, 181, 0.1);
+  /* لون لينكد إن */
+  color: #0077b5;
+}
+
+.social-link.youtube:hover {
+  /* خلفية يوتيوب */
+  background: rgba(255, 0, 0, 0.1);
+  /* لون يوتيوب */
+  color: #ff0000;
+}
+
+/* تخصيص الأكورديون */
+.accordion-item {
+  /* حواف مدورة */
+  border-radius: 10px !important;
+  /* حدود خفيفة */
+  border: 1px solid #e9ecef !important;
+  /* مسافة سفلية */
+  margin-bottom: 10px;
+}
+
+/* تخصيص رأس الأكورديون */
+.accordion-header button {
+    /* حواف مدورة */
+    border-radius: 10px !important;
+/* وزن خط ع

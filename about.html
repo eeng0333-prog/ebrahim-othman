@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <!-- تعيين ترميز الأحرف إلى UTF-8 لدعم النصوص العربية -->
+    <meta charset="UTF-8">
+    <!-- جعل الموقع متجاوب مع جميع الأجهزة -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- عنوان صفحة من نحن -->
+    <title>من نحن - إبراهيم المخلافي</title>
+    <!-- رابط Bootstrap CSS للتصميم المتجاوب -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- رابط Font Awesome للأيقونات -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- رابط ملف CSS المخصص -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- رأس الصفحة الرئيسي -->
+    <header class="bg-primary text-white">
+        <!-- شريط التنقل العلوي -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <!-- شعار الموقع -->
+                <a class="navbar-brand fw-bold fs-3" href="index.html">
+                    <i class="fas fa-truck me-2"></i>إبراهيم المخلافي
+                </a>
+                <!-- زر القائمة للشاشات الصغيرة -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- قائمة التنقل الرئيسية -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <!-- رابط الصفحة الرئيسية -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">الرئيسية</a>
+                        </li>
+                        <!-- رابط صفحة من نحن -->
+                        <li class="nav-item">
+                            <a class="nav-link active" href="about.html">من نحن</a>
+                        </li>
+                        <!-- رابط صفحة المنتجات -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">المنتجات</a>
+                        </li>
+                        <!-- رابط صفحة الحساب -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="account.html">الحساب</a>
+                        </li>
+                        <!-- رابط صفحة التواصل -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">تواصل معنا</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- المحتوى الرئيسي للصفحة -->
+    <main class="py-5">
+        <div class="container">
+            <!-- عنوان الصفحة -->
+            <div class="text-center mb-5">
+                <h1 class="display-4 fw-bold text-primary">من نحن</h1>
+                <p class="lead text-muted">تعرف على قصة إبراهيم المخلافي وخدمة التوصيل المميزة</p>
+            </div>
+
+            <!-- قسم قصة الشركة -->
+            <section class="about-story mb-5">
+                <div class="row align-items-center">
+                    <!-- النص -->
+                    <div class="col-lg-6">
+                        <h2 class="h3 fw-bold mb-4">قصتنا</h2>
+                        <p class="mb-3">
+                            بدأت قصة إبراهيم المخلافي في عام 2019 برؤية بسيطة: تقديم خدمة توصيل سريعة وموثوقة 
+                            لجميع سكان المدينة. ما بدأ كمشروع صغير تطور ليصبح واحداً من أهم خدمات التوصيل في المنطقة.
+                        </p>
+                        <p class="mb-3">
+                            نحن نؤمن بأن الجودة والسرعة هما أساس النجاح، لذلك نعمل بجد لضمان وصول طلباتكم 
+                            في الوقت المحدد وبأفضل حالة ممكنة.
+                        </p>
+                        <p>
+                            فريقنا المتخصص يعمل على مدار الساعة لخدمتكم وتلبية جميع احتياجاتكم من الطعام والبقالة 
+                            والمنتجات المختلفة.
+                        </p>
+                    </div>
+                    <!-- الصورة -->
+                    <div class="col-lg-6">
+                        <img src="../images/about-story.jpg" alt="قصة الشركة" class="img-fluid rounded shadow">
+                    </div>
+                </div>
+            </section>
+
+            <!-- قسم القيم -->
+            <section class="values-section mb-5">
+                <div class="text-center mb-4">
+                    <h2 class="h3 fw-bold text-primary">قيمنا</h2>
+                    <p class="text-muted">المبادئ التي نؤمن بها ونعمل من خلالها</p>
+                </div>
+                <div class="row g-4">
+                    <!-- قيمة الجودة -->
+                    <div class="col-md-4">
+                        <div class="value-card text-center p-4 h-100">
+                            <div class="value-icon mb-3">
+                                <i class="fas fa-star fa-3x text-warning"></i>
+                            </div>
+                            <h3 class="h5 fw-bold">الجودة</h3>
+                            <p class="text-muted">نلتزم بتقديم أعلى مستويات الجودة في جميع خدماتنا</p>
+                        </div>
+                    </div>
+                    <!-- قيمة السرعة -->
+                    <div class="col-md-4">
+                        <div class="value-card text-center p-4 h-100">
+                            <div class="value-icon mb-3">
+                                <i class="fas fa-bolt fa-3x text-primary"></i>
+                            </div>
+                            <h3 class="h5 fw-bold">السرعة</h3>
+                            <p class="text-muted">التوصيل السريع هو أولويتنا الأولى</p>
+                        </div>
+                    </div>
+                    <!-- قيمة الثقة -->
+                    <div class="col-md-4">
+                        <div class="value-card text-center p-4 h-100">
+                            <div class="value-icon mb-3">
+                                <i class="fas fa-handshake fa-3x text-success"></i>
+                            </div>
+                            <h3 class="h5 fw-bold">الثقة</h3>
+                            <p class="text-muted">نبني علاقات طويلة الأمد مع عملائنا</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- قسم الفريق -->
+            <section class="team-section mb-5">
+                <div class="text-center mb-4">
+                    <h2 class="h3 fw-bold text-primary">فريق العمل</h2>
+                    <p class="text-muted">الأشخاص الذين يجعلون خدمتنا مميزة</p>
+                </div>
+                <div class="row g-4">
+                    <!-- عضو الفريق الأول -->
+                    <div class="col-md-4">
+                        <div class="team-card text-center">
+                            <img src="../images/team1.jpg" alt="إبراهيم المخلافي" class="team-image mb-3">
+                            <h4 class="fw-bold">إبراهيم المخلافي</h4>
+                            <p class="text-primary">المؤسس والمدير العام</p>
+                            <p class="text-muted">خبرة 10 سنوات في مجال الخدمات اللوجستية</p>
+                        </div>
+                    </div>
+                    <!-- عضو الفريق الثاني -->
+                    <div class="col-md-4">
+                        <div class="team-card text-center">
+                            <img src="../images/team2.jpg" alt="أحمد محمد" class="team-image mb-3">
+                            <h4 class="fw-bold">أحمد محمد</h4>
+                            <p class="text-primary">مدير العمليات</p>
+                            <p class="text-muted">متخصص في تنسيق عمليات التوصيل</p>
+                        </div>
+                    </div>
+                    <!-- عضو الفريق الثالث -->
+                    <div class="col-md-4">
+                        <div class="team-card text-center">
+                            <img src="../images/team3.jpg" alt="فاطمة علي" class="team-image mb-3">
+                            <h4 class="fw-bold">فاطمة علي</h4>
+                            <p class="text-primary">مديرة خدمة العملاء</p>
+                            <p class="text-muted">خبيرة في التعامل مع العملاء وحل المشاكل</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- جدول الإحصائيات -->
+            <section class="statistics-table">
+                <div class="text-center mb-4">
+                    <h2 class="h3 fw-bold text-primary">إحصائياتنا</h2>
+                    <p class="text-muted">أرقام تعكس نجاحنا وتطورنا</p>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover">
+                        <thead class="table-primary">
+                            <tr>
+                                <th scope="col">السنة</th>
+                                <th scope="col">عدد الطلبات</th>
+                                <th scope="col">عدد العملاء</th>
+                                <th scope="col">المطاعم الشريكة</th>
+                                <th scope="col">معدل الرضا</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2019</td>
+                                <td>500</td>
+                                <td>100</td>
+                                <td>5</td>
+                                <td>85%</td>
+                            </tr>
+                            <tr>
+                                <td>2020</td>
+                                <td>1,200</td>
+                                <td>300</td>
+                                <td>12</td>
+                                <td>88%</td>
+                            </tr>
+                            <tr>
+                                <td>2021</td>
+                                <td>2,500</td>
+                                <td>600</td>
+                                <td>25</td>
+                                <td>92%</td>
+                            </tr>
+                            <tr>
+                                <td>2022</td>
+                                <td>4,000</td>
+                                <td>850</td>
+                                <td>35</td>
+                                <td>94%</td>
+                            </tr>
+                            <tr>
+                                <td>2023</td>
+                                <td>5,500</td>
+                                <td>1,200</td>
+                                <td>50</td>
+                                <td>96%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- تذييل الصفحة -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <!-- معلومات الشركة -->
+                <div class="col-md-6">
+                    <h5 class="fw-bold mb-3">إبراهيم المخلافي</h5>
+                    <p class="text-muted">خدمة التوصيل الأسرع والأفضل في المدينة</p>
+                </div>
+                <!-- روابط التواصل الاجتماعي -->
+                <div class="col-md-6 text-md-end">
+                    <h5 class="fw-bold mb-3">تابعنا</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-whatsapp fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- حقوق النشر -->
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2024 إبراهيم المخلافي. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- رابط Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- رابط ملف JavaScript المخصص -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

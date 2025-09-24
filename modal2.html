@@ -1,0 +1,115 @@
+<!-- نافذة عرض الخريطة -->
+<div class="modal fade" id="mapModal" tabindex="-1" aria-labelledby="mapModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <!-- رأس النافذة -->
+            <div class="modal-header bg-success text-white">
+                <h5 class="modal-title" id="mapModalLabel">
+                    <i class="fas fa-map-marker-alt me-2"></i>موقعنا على الخريطة
+                </h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            
+            <!-- محتوى النافذة -->
+            <div class="modal-body p-0">
+                <!-- معلومات الموقع -->
+                <div class="location-info p-4 bg-light">
+                    <div class="row align-items-center">
+                        <div class="col-md-8">
+                            <h4 class="fw-bold text-success mb-2">
+                                <i class="fas fa-building me-2"></i>مقر إبراهيم المخلافي
+                            </h4>
+                            <p class="mb-1">
+                                <i class="fas fa-map-marker-alt me-2 text-success"></i>
+                                شارع الملك فهد، حي العليا، الرياض 12345
+                            </p>
+                            <p class="mb-1">
+                                <i class="fas fa-phone me-2 text-success"></i>
+                                920001234 | 0501234567
+                            </p>
+                            <p class="mb-0">
+                                <i class="fas fa-clock me-2 text-success"></i>
+                                مفتوح: السبت - الخميس (8:00 ص - 12:00 م)
+                            </p>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="location-icon">
+                                <i class="fas fa-store fa-4x text-success"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- منطقة الخريطة -->
+                <div class="map-container">
+                    <div id="mapPlaceholder" class="map-placeholder">
+                        <div class="map-content">
+                            <i class="fas fa-map fa-5x text-muted mb-3"></i>
+                            <h5 class="text-muted">خريطة تفاعلية</h5>
+                            <p class="text-muted">موقع مقر إبراهيم المخلافي الرئيسي</p>
+                            
+                            <!-- معلومات الاتجاهات -->
+                            <div class="directions-info mt-4">
+                                <h6 class="fw-bold text-primary">كيفية الوصول:</h6>
+                                <ul class="list-unstyled text-start">
+                                    <li class="mb-2">
+                                        <i class="fas fa-car me-2 text-primary"></i>
+                                        بالسيارة: اتجه إلى شارع الملك فهد، حي العليا
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="fas fa-subway me-2 text-primary"></i>
+                                        بالمترو: محطة العليا (الخط الأزرق)
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="fas fa-bus me-2 text-primary"></i>
+                                        بالحافلة: خط رقم 12 أو 15
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- معالم قريبة -->
+                            <div class="nearby-landmarks mt-4">
+                                <h6 class="fw-bold text-success">معالم قريبة:</h6>
+                                <div class="row text-start">
+                                    <div class="col-6">
+                                        <p class="mb-1">
+                                            <i class="fas fa-hospital me-2 text-danger"></i>
+                                            مستشفى الملك فيصل
+                                        </p>
+                                        <p class="mb-1">
+                                            <i class="fas fa-shopping-cart me-2 text-warning"></i>
+                                            مول العليا
+                                        </p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="mb-1">
+                                            <i class="fas fa-gas-pump me-2 text-info"></i>
+                                            محطة أرامكو
+                                        </p>
+                                        <p class="mb-1">
+                                            <i class="fas fa-utensils me-2 text-success"></i>
+                                            مطاعم الكورنيش
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- تذييل النافذة -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                    <i class="fas fa-times me-2"></i>إغلاق
+                </button>
+                <a href="https://maps.google.com/?q=Riyadh+King+Fahd+Road" target="_blank" class="btn btn-success">
+                    <i class="fas fa-external-link-alt me-2"></i>فتح في خرائط جوجل
+                </a>
+                <button type="button" class="btn btn-primary" onclick="getDirections()">
+                    <i class="fas fa-route me-2"></i>الحصول على الاتجاهات
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
